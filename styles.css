@@ -1,0 +1,492 @@
+/* ----- NOLLSTÄLL STILAR ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #222324;
+    margin: 0;
+}
+
+/* ----- HEADER & NAVIGATION ----- */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+header .header1 {
+    text-align: center;
+}
+
+header .topnav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .topnav ul li {
+    margin: 0 10px;
+}
+
+header .topnav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header .topnav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* ----- HERO SECTION ----- */
+.hero {
+    background-image: url('img/headerimage.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .hero-content h2 {
+    background-color: #575757;
+    border-radius: 5px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #dadde0;
+}
+
+.hero .hero-content p {
+    background-color: #575757;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #dadde0;
+}
+
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color:#f9f9f9;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* ----- MEDIA QUERIES / HEADER / HERO ----- */
+@media (max-width: 768px) {
+    header .topnav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 20px;
+        height: 80vh;
+    }
+
+    header .topnav ul {
+        padding: 10px;
+    }
+}
+/* ----- ABOUT ----- */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #dadde0;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #dadde0;
+}
+
+/* ----- MEDIA QUERIES ABOUT ----- */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+/* ----- TEKNIK ----- */
+.technical-skills {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #dadde0;
+}
+
+.technical-skills h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.technical-skills p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.skill {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    background-color: #575757;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.skill h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #dadde0;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #dadde0;
+}
+
+.skill.hidden {
+    display: none;
+}
+
+/* ----- SÖKFUNKTION ----- */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* ----- MEDIA QUERIES TEKNIK ----- */
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .technical-skills h1 {
+        font-size: 2rem;
+    }
+
+    .technical-skills p {
+        font-size: 1rem;
+    }
+}
+/* ------- CV --------- */
+.cv-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cv-header h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #dadde0;
+}
+
+.cv-header p {
+    font-size: 1.2em;
+    color: #dadde0;
+}
+
+/* ----- ERFARENHET --------- */
+.experience {
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.experience h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #dadde0;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #dadde0;
+}
+
+.experience-item p {
+    margin-bottom: 5px;
+    color: #dadde0;
+}
+
+.experience-item strong {
+    color: #dadde0;
+}
+
+/* ---------- UTBILDNING -------- */
+.education {
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.education h2, h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #dadde0;
+    margin-left: 10px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #dadde0;
+}
+
+.education-item p {
+    margin-bottom: 5px;
+    color: #dadde0;
+}
+
+.education-item strong {
+    color: #dadde0;
+}
+
+/* ----- FÄRDIGHETER -------- */
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+    color: #dadde0;
+    margin-left: 10px;
+}
+
+.skills li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    
+}
+/*------------  CONTACT ------------------- */
+.contact-header {
+    text-align: center;
+    margin: 20px 40px;
+    
+    color: #dadde0;
+}
+
+.contact-header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #dadde0;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+.contact-header a {
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+.contact-header a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* ------- CONTACT FORMULÄR ----------- */
+.contact-form {
+    background-color: #97999c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+/* ---- HAMBURGARMENY ---- */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* ---- GÖR NAVIGATIONEN DOLDBAR ---- */
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+/* ---- MEDIA QUERIES / HAMBURGARMENY ---- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Placera under header */
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <!-- plats för h-meny -->
+            <div class="hamburger" id="hamburger">
+                <!-- dessa blir strecken -->
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="technical.html">Technical Skills</a></li>
+                <li><a href="cv.html">CV and Cover Letter</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-header">
+            <h1>Contact Me</h1>
+            <p>Fill in the form or check out one of these links for you preferred way of contact.</p>
+        </section>
+        <section class="contact-header">
+            <h1>Email</h1>
+            <a href="mailto:lisa.upp@hotmail.com">Send me and Email!</a>
+            <h1>Phone</h1>
+            <a href="tel:+46708543962">Give me a call or send a text!</a>
+            <h1>GitHub</h1>
+            <a href="https://github.com/lisaupperud">Follow me on GitHub</a>
+            <h1>LinkedIn</h1>
+            <a href="www.linkedin.com/in/lisa-upperud-2b7383160">Add me on LinkedIn</a>
+        </section>
+
+        <section class="contact-form">
+            <form action="submit_form.php" method="POST" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lisa Upperud. All rights reserved.</p>
+        <a href="mailto:lisa.upp@hotmail.com">E-mail</a>
+        <a href="www.linkedin.com/in/lisa-upperud-2b7383160">LinkedIn</a>
+    </footer>
+    
+    <script src="js/form.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>
