@@ -9,13 +9,13 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #222324;
+    background-color: #333;
     margin: 0;
 }
 
 /* ----- HEADER & NAVIGATION ----- */
 header {
-    background-color: #333;
+    background-color: #222324;
     color: #fff;
     padding: 10px 20px;
 }
@@ -236,6 +236,12 @@ footer a:hover {
     color: #dadde0;
 }
 
+.skill a {
+    color: #00A8E8;
+    text-decoration: none;
+}
+
+
 .skill.hidden {
     display: none;
 }
@@ -368,6 +374,26 @@ footer a:hover {
     margin-bottom: 10px;
     
 }
+
+/* ----- MEDIA QUERY / CV ------------ */
+@media (max-width: 768px) {
+    .cv-header {
+        text-align: center;
+    }
+
+    .experience, .education {
+        margin: 10px;
+    }
+
+    .experience h2, .education h2 {
+        font-size: 1.5em;
+    }
+
+    .experience-item, .education-item {
+        margin-bottom: 15px;
+    }
+}
+
 /*------------  CONTACT ------------------- */
 .contact-header {
     text-align: center;
@@ -390,6 +416,7 @@ footer a:hover {
     text-decoration: none;
     padding: 8px 15px;
     transition: background-color 0.3s ease;
+    color: #00A8E8;
 }
 .contact-header a:hover {
     background-color: #575757;
@@ -440,6 +467,32 @@ footer a:hover {
 .contact-form button:hover {
     background-color: #555;
 }
+
+/* ------- MEDIA QUERY / CONTACT ------ */
+@media (max-width: 768px) {
+
+    .contact-header {
+        text-align: center;
+        margin: 10px 20px;
+    }
+
+
+    .contact-form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%; 
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        width: 100%; 
+        font-size: 1em;
+    }
+}
 /* ---- HAMBURGARMENY ---- */
 .hamburger {
     display: none;
@@ -476,7 +529,7 @@ footer a:hover {
         background-color: #333;
         width: 100%;
         position: absolute;
-        top: 60px; /* Placera under header */
+        top: 60px;
         left: 0;
         padding: 10px 0;
         text-align: center;
