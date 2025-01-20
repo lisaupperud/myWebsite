@@ -500,6 +500,9 @@ footer a:hover {
     list-style: none;
 
 }
+.nav-links.active {
+    display: flex;
+}
 
 /* ---- MEDIA QUERIES / HAMBURGARMENY ---- */
 @media (max-width: 768px) {
