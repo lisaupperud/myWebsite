@@ -64,7 +64,7 @@ header .topnav ul li a:hover {
     border-radius: 5px;
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .hero .hero-content p {
@@ -72,7 +72,7 @@ header .topnav ul li a:hover {
     border-radius: 5px;
     padding: 20px;
     font-size: 1.5rem;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 
@@ -228,12 +228,12 @@ footer a:hover {
 .skill h2 {
     font-size: 1.6rem;
     margin-bottom: 10px;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .skill p {
     font-size: 1rem;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .skill a {
@@ -306,12 +306,12 @@ footer a:hover {
     font-size: 2.5rem;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .cv-header p {
     font-size: 1.2em;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 /* ----- ERFARENHET --------- */
@@ -323,7 +323,7 @@ footer a:hover {
 .experience h2, h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .experience-item {
@@ -333,7 +333,7 @@ footer a:hover {
 .experience-item h3 {
     font-size: 1.5em;
     margin-bottom: 5px;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .experience-item p {
@@ -342,7 +342,7 @@ footer a:hover {
 }
 
 .experience-item strong {
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 /* ----- FÄRDIGHETER -------- */
@@ -355,7 +355,7 @@ footer a:hover {
 .skills ul {
     list-style: none;
     padding-left: 0;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .skills li {
@@ -381,18 +381,18 @@ footer a:hover {
 .contact-header {
     text-align: center;
     margin: 20px 40px;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .contact-header h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 
 .contact-header p {
     font-size: 1.2em;
-    color: #dadde0;
+    color: #FCFCFC;
 }
 .contact-header a {
     text-decoration: none;
@@ -407,7 +407,7 @@ footer a:hover {
 
 /* ------- CONTACT FORMULÄR ----------- */
 .contact-form {
-    background-color: #97999c;
+    background-color: #39393C;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
