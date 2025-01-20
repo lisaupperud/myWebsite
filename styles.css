@@ -411,14 +411,15 @@ footer a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 20px;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .contact-form label {
@@ -433,6 +434,7 @@ footer a:hover {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 50%;
 }
 
 .contact-form button {
