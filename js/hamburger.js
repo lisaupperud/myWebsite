@@ -1,8 +1,8 @@
-// Hitta hamburgar-knappen och navigationsmenyn
+// hämtar hamburgar-knappen och navigationsmenyn
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
 
-// Lägg till klickhändelse på hamburgarmenyn
+// lägger till klickhändelse
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active'); // Växla klassen 'active'
+    navLinks.classList.toggle('active'); // växlar till active
 });
