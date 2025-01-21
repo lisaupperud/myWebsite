@@ -423,6 +423,7 @@ footer a:hover {
 }
 
 .contact-form label {
+    color: #FCFCFC;
     text-align: center;
     font-size: 1.1em;
     margin-bottom: 5px;
